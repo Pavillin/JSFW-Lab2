@@ -29,9 +29,7 @@ const handleHttpCalculation = (request, response) => {
 
     if(!method){
         return response.send(`Method must be included and be one of the following: ${
-            validOptions.join(
-                ', '
-            )
+            validOptions.join(', ')
         }`);
     }
 
